@@ -102,9 +102,13 @@ Next team member should pull to download updates and continue from here.
 staff_long %>%
   ggplot(aes(x = year, y = percentage, color = faculty_type, group = faculty_type)) +
   geom_line() +
-  labs(title = "Instructional staff employment trends",
+  labs(title = "The American Association of University Professors (AAUP)",
+       subtitle = "Instructional staff employment trends",
        x= "Year",
-       y= "Percentage")
+       y= "Percentage") 
+
+  
+
 ```
 
 
