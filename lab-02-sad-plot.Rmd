@@ -83,6 +83,7 @@ The percentage of part-time faculty took the lead after approximately the year 1
 staff_long %>%
   ggplot(aes(x = year, y = percentage, color = faculty_type, group = faculty_type)) +
   geom_line()
+
 ```
 
 
@@ -95,10 +96,15 @@ Next team member should pull to download updates and continue from here.
 
 ### Exercise 6
 
-*Remove this text and add your answer here.*
+
 
 ```{r lineplot-3}
-# remove this comment and add your code here
+staff_long %>%
+  ggplot(aes(x = year, y = percentage, color = faculty_type, group = faculty_type)) +
+  geom_line() +
+  labs(title = "Instructional staff employment trends",
+       x= "Year",
+       y= "Percentage")
 ```
 
 
