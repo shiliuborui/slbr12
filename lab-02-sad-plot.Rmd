@@ -66,19 +66,23 @@ Team member 3 should pull to download updates and begins here.
 
 ### Exercise 4
 
-*Remove this text and add your answer here.*
+Nothing is shown on the graph.
 
 ```{r lineplot-1}
-# remove this comment and add your code here
+staff_long %>%
+  ggplot(aes(x = year, y = percentage, color = faculty_type)) +
+  geom_line() 
 ```
 
 
 ### Exercise 5
 
-*Remove this text and add your answer here.*
+The percentage of part-time faculty took the lead after approximately the year 1984 and gradually rises to 40% at 2011. The percentage of full-time tenured faculty and full-time tenure-track faculty began high but both fell below less than 2/3 of their original values, whereas that of full-time non-tenure-track faculty and graduate student employees showed opposite trends, while incrementing slightly over the 36-year timespan.
 
 ```{r lineplot-2}
-# remove this comment and add your code here
+staff_long %>%
+  ggplot(aes(x = year, y = percentage, color = faculty_type, group = faculty_type)) +
+  geom_line()
 ```
 
 
