@@ -25,7 +25,7 @@ Team member 1 should pull to download updates and begins here.
 
 ### Exercise 1
 
-*Remove this text and add your answer here. No code needed for this exercise!*
+The data will have 55 rows.
 
 
 Team member 1 should knit, stage & commit, and push all changes to GitHub.
